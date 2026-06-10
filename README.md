@@ -4,6 +4,14 @@
 **By [DYFIA](https://dyfia.gr) | Author: Natasa Mantzarea**
 
 ---
+## How to Install
+
+1. Download the latest release https://github.com/nmantzarea/ArithmoLex/releases/latest
+2. Import the managed solution into your Power Platform / Dataverse environment.
+3. Add ArithmoLex to a supported field in your model-driven app.
+4. Configure properties.
+5. Save and publish your customization.
+
 
 ## What it does
 
@@ -23,19 +31,6 @@ Displays any numeric or currency field as written-out words, automatically in th
 | `21,000 EUR` | Είκοσι μία χιλιάδες ευρώ | Twenty-one thousand euro |
 | `-300.50 EUR` | Μείον τριακόσια ευρώ και πενήντα λεπτά | Minus three hundred euro and fifty cents |
 
----
-
-## Why ArithmoLex is different
-
-| Feature | ArithmoLex | Other PCF controls |
-|---|---|---|
-| Auto language detection | ✅ | ❌ |
-| Greek custom engine (gender-aware) | ✅ | ❌ |
-| Admin-configurable default language | ✅ | ❌ |
-| Writes back to Dataverse field | ✅ Available in views & flows | ❌ Display only |
-| Currency type support | ✅ Decimal + Currency + FP | ❌ Money only |
-| Copy button | ✅ | ❌ |
-| Zero dependencies | ✅ | ❌ |
 
 ---
 
@@ -61,33 +56,4 @@ Any other language           → Admin defaultLanguage setting
 
 ---
 
-## Build & Package
 
-```bash
-cd ArithmoLex
-npm install
-npm run build
-
-cd ../Solution
-msbuild ArithmoLex_Solution.cdsproj /t:build /restore /p:configuration=Release
-```
-
-After build, create the Controls subfolder manually:
-```bash
-mkdir ArithmoLex\out\controls\Dyfia.ArithmoLex
-copy ArithmoLex\out\controls\bundle.js ArithmoLex\out\controls\Dyfia.ArithmoLex\bundle.js
-copy ArithmoLex\out\controls\ControlManifest.xml ArithmoLex\out\controls\Dyfia.ArithmoLex\ControlManifest.xml
-```
-
-Then rebuild solution:
-```bash
-cd Solution
-msbuild ArithmoLex_Solution.cdsproj /t:build /p:configuration=Release
-```
-
-Managed zip → `Solution\bin\Release\ArithmoLex_Solution.zip`
-
----
-
-## License
-MIT
