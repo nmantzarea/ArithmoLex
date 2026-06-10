@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Dyfia" constructor="ArithmoLex" version="1.1.1"
+           display-name-key="ArithmoLex"
+           description-key="Displays numeric or currency fields as written-out words. Auto-detects Greek or English from the user UI language. By DYFIA."
+           control-type="standard">
+
+    <type-group name="numbers">
+      <type>Decimal</type>
+      <type>Currency</type>
+      <type>FP</type>
+      <type>Whole.None</type>
+    </type-group>
+
+    <property name="value"
+              display-name-key="Value"
+              description-key="The numeric or currency field to convert"
+              of-type-group="numbers"
+              usage="bound"
+              required="true" />
+
+    <property name="currencyCode"
+              display-name-key="Currency Code"
+              description-key="ISO currency code: EUR, USD, GBP, CHF. Leave empty for plain numbers without currency label."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false"
+              default-value="" />
+
+    <property name="defaultLanguage"
+              display-name-key="Default Language"
+              description-key="Fallback language when user language is not Greek or English. Use: el-GR or en-US"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false"
+              default-value="en-US" />
+
+    <property name="capitalize"
+              display-name-key="Capitalize First Letter"
+              description-key="Capitalize the first letter of the output"
+              of-type="TwoOptions"
+              usage="input"
+              required="false"
+              default-value="1" />
+
+    <property name="wordsOutput"
+              display-name-key="Words Output"
+              description-key="Optional: bind to a text column to save the words back to Dataverse (available in views and flows)"
+              of-type="SingleLine.Text"
+              usage="bound"
+              required="false" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+
+  </control>
+</manifest>

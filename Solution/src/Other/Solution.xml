@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.0.0.0" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>ArithmoLex</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="ArithmoLex" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Greek and English Number To Words PCF Control. Auto-detects user language. By DYFIA." languagecode="1033" />
+    </Descriptions>
+    <Version>1.1.0.0</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>Dyfia</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="DYFIA" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="DYFIA Microsoft Partner" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress>info@dyfia.gr</EMailAddress>
+      <SupportingWebsiteUrl>https://dyfia.gr</SupportingWebsiteUrl>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City />
+          <County />
+          <Country>Greece</Country>
+          <Fax />
+          <FreightTermsCode xsi:nil="true" />
+          <ImportSequenceNumber xsi:nil="true" />
+          <Latitude xsi:nil="true" />
+          <Line1 />
+          <Line2 />
+          <Line3 />
+          <Longitude xsi:nil="true" />
+          <Name />
+          <PostalCode />
+          <ShippingMethodCode xsi:nil="true" />
+          <StateOrProvince />
+          <Telephone1 />
+          <Telephone2 />
+          <Telephone3 />
+          <TimeZoneRuleVersionNumber xsi:nil="true" />
+          <UPSZone />
+          <UTCOffset xsi:nil="true" />
+          <WebSiteUrl />
+        </Address>
+      </Addresses>
+      <CustomizationPrefix>dyfia</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+    </Publisher>
+    <RootComponents />
+    <MissingDependencies />
+  </SolutionManifest>
+</ImportExportXml>
