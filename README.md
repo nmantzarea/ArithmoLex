@@ -1,7 +1,7 @@
 # ArithmoLex v1.1.0
 ### Greek & English Number To Words — PCF Control for Dynamics 365
 
-**By [DYFIA](https://dyfia.gr) | Author: Natasa Mantzarea**
+**By DYFIA | Author: Natasa Mantzarea**
 
 ---
 ## How to Install
